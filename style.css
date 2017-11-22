@@ -1,0 +1,75 @@
+body {
+    font-family: consolas, courier;
+    font-size: 16px;
+    background-image: url(topography.png);
+}
+
+main,
+header {
+    display: block;
+    margin: auto;
+}
+
+main {
+    padding: 0 10%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Lobster', cursive;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+.pink {
+    color: #ff0099;
+}
+
+p {
+    text-align: justify;
+}
+
+#separator p {
+    text-align: center;
+    margin: 25px 0;
+    font-weight: 700;
+}
+
+/*************** ITT KEZDŐDIK A MENŰ ***************/
+
+.logo {
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0 15px;
+    font-size: 1.2em;
+}
+
+/*.navbar-default .navbar-nav*/ #nav li a {
+    color: #ff0099;
+}
+
+/*.navbar-default*/#nav {
+    background-color: #333;
+    color: white;
+    padding: 0 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+/*.navbar-default .navbar-nav*/ #nav li a:hover {
+    color: white;
+    background-color: #ff0099;
+}
+
+a {
+    text-decoration: underline;
+}
