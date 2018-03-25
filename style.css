@@ -1,75 +1,85 @@
-body {
-    font-family: consolas, courier;
-    font-size: 16px;
-    background-image: url(topography.png);
+* {
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-main,
-header {
-    display: block;
-    margin: auto;
+body {
+    background: #b4dc47;
+    font-size: 22px;
+    font-family: sans-serif;
+    font-weight: 300;
 }
 
 main {
-    padding: 0 10%;
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
 }
 
-h1,
-h2,
-h3 {
-    font-family: 'Lobster', cursive;
+main h1 {
+    margin: 30px 0;
 }
 
-h3 {
-    font-size: 20px;
+main h3 {
+/*    text-align: justify;*/
+    margin: 30px 0 10px;
 }
 
-.pink {
-    color: #ff0099;
+#participants ul {
+    list-style-type: none;
+    column-count: 6;
+    column-gap: 50px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 40px;
 }
 
-p {
+button {
+    border-radius: 10px;
+    border-bottom-width: thick;
+    border-bottom-color: #1AAA57;
+}
+
+.start {
+    padding: 15px;
+    font-size: 1em;
+    color: #1AAA57;
+}
+
+.bold {
+    font-weight: 700;
+    margin: 25px 0 0;
+    font-size: 1.1em;
     text-align: justify;
 }
 
-#separator p {
-    text-align: center;
-    margin: 25px 0;
+main h2 {
     font-weight: 700;
-}
-
-/*************** ITT KEZDŐDIK A MENŰ ***************/
-
-.logo {
-    padding-top: 10px;
-    padding-left: 15px;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0 15px;
+    margin: 25px 0;
     font-size: 1.2em;
 }
 
-/*.navbar-default .navbar-nav*/ #nav li a {
-    color: #ff0099;
+table {
+    margin: auto;
+    text-align: center;
+    border-collapse: collapse;
 }
 
-/*.navbar-default*/#nav {
-    background-color: #333;
-    color: white;
-    padding: 0 10%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
+table tr:nth-child(even),
+thead th {
+    background: #1aaa57;
 }
 
-/*.navbar-default .navbar-nav*/ #nav li a:hover {
-    color: white;
-    background-color: #ff0099;
+table tr:nth-child(odd) {
+    background: #51D400;
+
 }
 
-a {
-    text-decoration: underline;
+tbody td,
+thead th {
+    border: 1px solid #333;
+    padding: 10px 25px;
+    line-height: 1.5em;
 }

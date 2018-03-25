@@ -3,50 +3,27 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <title></title>
     <link rel="stylesheet" href="style.css">
-    <title>First-ish website</title>
 </head>
 
 <body>
-    <header>
-        <nav id="nav"> <!--class="navbar navbar-default"-->
-            <img src="aperture.svg" alt="logo" class="logo">
-            <ul> <!--class="nav navbar-nav navbar-right"-->
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#wiki">WIKI</a></li>
-                <li><a href="https://github.com" target="_blank">GITHUB</a></li>
-                <li><a href="https://www.linkedin.com" target="_blank">LINKEDIN</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Fruzsi</h1>
-        <section id="first">
-            <h2 class="pink">Junior web developer and Green Fox Student</h2>
-            <p>As a junior web developer, I creating and maintaining web pages (mainly on a front-end line). For my preveous works please visit <a href="http://www.wingtsuncsepel.hu" target="_blank">www.wingtsuncsepel.hu</a> or <a href="http://www.wingtsungodollo.hu" target="_blank">www.wingtsungodollo.hu</a> or <a href="http://www.wingtsun16.hu" target="_blank">www.wingtsun16.hu</a>.</p>
-            <p>I am open to new challenges and wish to expand my existing knowledge and skills. </p>
+    <main onload="createNewElement()">
+        <img src="image/green-fox-academy.png" class="image" alt="green fox logo">
+        <h1>Green Fox Demo Lottery</h1>
+        <p class="bold">Foxes (in alphabetical order):</p>
+        <section id="participants">
+            <ul class="foxes"></ul> 
         </section>
-        <section id="separator">
-            <p>- - -</p>
-        </section>
-        <section id="wiki">
-            <h2>Technology Wiki</h2>
-            <h3>Logic gates</h3>
-            <p>It is an idealized or physical device implementing a Boolean function; that is, it performs a logical operation on one or more binary inputs and produces a single binary output.</p>
-            <h3>ASCII code</h3>
-            <p>It stands for American Standard Code for Information Interchange. Computers can only understand numbers, so it is the numerical representation of a character such as 'a' or '@' or an action of some sort.</p>
-            <h3>RAM = Random-access memory</h3>
-            <p>It is a form of computer data storage which stores frequently used program instructions to increase the general speed of a system. It can be randomly accessed. Data items to be read or written in almost the same amount of time irrespective of the physical location of data inside the memory.</p>
-            <h3>Programming language</h3>
-            <p>A formal language that specifies a set of instructions that can be used to produce various kinds of output. They generally consist of instructions for a computer and can be used to create programs that implement specific algorithms.</p>
-            <h3>DNS = Domain Name System</h3>
-            <p>A hierarchical decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It associates various information with domain names assigned to each of the participating entities.</p>
-            <h3>HTTP = Hypertext Transfer Protocol</h3>
-            <p>An application protocol for distributed, collaborative, and hypermedia information systems. It is the foundation of data communication for the World Wide Web. It is the standard protocol to exchange or transfer hypertext.</p>
-        </section>
+        <button class="start">LET'S GET STARTED!</button>
+        <h3>And Today's order is:</h3>
+        <table>
+            <thead id="tablehead"></thead>
+            <tbody id="tablebody"></tbody>
+        </table>
+        <h2>Thank you for watching and Have Fun!</h2>
+        <img src="image/green-fox.jpg" alt="green fox">
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
- 
